@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Hai cantiknya akuuuu</h1>
+        <h2>Kamu sayang aku kann???</h2>
+        <button id="btn_want" onclick="alert('I Love You More')">Iyaa sayang banget</button>
+        <button id="btn_gamau" onclick="gamau(this)" style="position:absolute">engga</button>
+    </body>
+    
+    <script>
+        function gamau(id) {
+            var mau = document.getElementById("btn_want");
+            var i = Math.floor(Math.random()*300) + 1;
+            var j = Math.floor(Math.random()*100) + mau.offsetTop;
+            id.style.left = i + "px";
+            id.style.top = j + "px";
+        }
+    </script>
+</html>
